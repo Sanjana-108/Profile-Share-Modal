@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="sanj3.jpg">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div id="wrapper">
+        <div class="cardwrapper">
+            <div>
+               <img src="sanj3.jpg" >
+            </div>
+            <div class="username"><h2>Sanjana Katiyar</h2></div>
+            <div class="designation"><h3>Student, UIET Kanpur</h3></div>
+            <div class="bottomgroup">
+                <button onclick="openModal()" class="btnshare btncard">
+                    <i class="fa-solid fa-share"></i> 
+                  <div>Share My Profile</div>  
+                </button>
+                <button class="btnfollow btncard">Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="modalheader">
+           <h1>Share My Profile</h1> 
+           <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+           </div>
+        </div>
+       <div>
+         <h3>Share this via</h3>
+         <div class="icon-container">
+            <a href="https://github.com/Sanjana-108" class="icon" id="github"> <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sanjana-katiyar-91b97a253/" class="icon" id="linkedin"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sanjanak_19/" class="icon" id="instagram"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon" id="telegram"> <i class="fa-brands fa-telegram"></i></a>
+            
+           
+         </div>
+    </div>
+    </div>
+    <!-- overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+    <script 
+    src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
